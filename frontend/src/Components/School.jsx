@@ -10,7 +10,7 @@ const School = () => {
    useEffect(() => {
      const fetchImages = async() =>{
       try{
-        const response = await axios.get( {"http://localhost:5000/getschool"});
+        const response = await axios.get("https://school-app-qoz4.onrender.com/getschool");
         setImages(response.data)
         console.log(response.data.image)
       }catch(err){
